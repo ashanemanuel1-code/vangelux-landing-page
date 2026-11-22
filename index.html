@@ -3,18 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>VANGELUX — More Than Clothing. A Message.</title>
-  <meta name="description" content="VANGELUX — Christian faith-inspired premium streetwear. Faith. Identity. Purpose. If your voice won't, let your clothing speak.">
+  <title>VANGELUX — Let Your Clothing Speak</title>
+  <meta name="description" content="VANGELUX — faith-driven Christian streetwear. If your voice won't, let your clothing speak. A message to the world. A reminder to yourself.">
   <meta name="theme-color" content="#080808">
 
-  <!-- Social share preview (WhatsApp, Facebook, etc.) -->
-  <meta property="og:title" content="VANGELUX — More Than Clothing. A Message.">
-  <meta property="og:description" content="Faith. Identity. Purpose. If your voice won't, let your clothing speak.">
+  <!-- Preview shown when the link is shared on WhatsApp, Facebook, etc. -->
+  <meta property="og:title" content="VANGELUX — Let Your Clothing Speak">
+  <meta property="og:description" content="Faith-driven Christian streetwear. A message to the world. A reminder to yourself.">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="assets/logo.png">
+  <meta property="og:url" content="https://ashanemanuel1-code.github.io/vangelux-landing-page/">
+  <meta property="og:image" content="https://ashanemanuel1-code.github.io/vangelux-landing-page/assets/og-image.jpg">
 
-  <link rel="icon" href="assets/logo.png">
-  <link rel="apple-touch-icon" href="assets/logo.png">
+  <link rel="icon" href="assets/icon.png">
+  <link rel="apple-touch-icon" href="assets/icon.png">
 
   <!-- Free Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,17 +34,18 @@
     <!-- ===================== A. BRAND INTRODUCTION ===================== -->
     <header class="hero">
       <div class="logo-wrap reveal">
-        <!-- YOUR LOGO: put your logo file at assets/logo.png -->
-        <img src="assets/logo.png" alt="VANGELUX logo" class="logo" id="brandLogo" width="180" height="180">
+        <!-- YOUR LOGO: assets/logo.png (white logo, made for dark backgrounds) -->
+        <img src="assets/logo.png" alt="VANGELUX" class="logo" id="brandLogo" width="1200" height="429">
         <!-- Shown only if assets/logo.png is missing -->
         <span class="logo-fallback" id="logoFallback" hidden>VANGELUX</span>
       </div>
 
-      <h1 class="headline reveal">More than clothing.<br><span class="gold">A message.</span></h1>
+      <p class="pre-headline reveal">If your voice won’t,</p>
+      <h1 class="headline reveal"><span class="gold">Let your clothing speak.</span></h1>
+      <p class="hero-sub reveal">Purpose-driven Christian streetwear.<br>Wear the message. Live the message.</p>
       <p class="subtitle reveal">Faith <span class="dot">·</span> Identity <span class="dot">·</span> Purpose</p>
-      <p class="slogan reveal">“If your voice won’t, let your clothing speak.”</p>
 
-      <a href="#connect" class="scroll-cue reveal" aria-label="Scroll to connect">
+      <a href="#connect" class="scroll-cue reveal" aria-label="Scroll down">
         <span></span>
       </a>
     </header>
@@ -104,35 +106,89 @@
           <span class="arrow" aria-hidden="true">→</span>
         </a>
 
-        <button class="link-btn link-btn--ghost reveal" type="button" id="saveContact">
+        <button class="link-btn link-btn--save reveal" type="button" id="saveContact">
           <span class="icon" aria-hidden="true">
             <svg viewBox="0 0 24 24"><circle cx="12" cy="8.5" r="3.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M5 20c.8-3.6 3.6-5.5 7-5.5s6.2 1.9 7 5.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
           </span>
           <span class="label">
             <strong>Save contact</strong>
-            <small>Add VANGELUX to your phone</small>
+            <small>Add us to your phone</small>
           </span>
           <span class="arrow" aria-hidden="true">+</span>
         </button>
       </div>
     </section>
 
+    <!-- ===================== OUR STORY ===================== -->
+    <section class="section story" id="story">
+      <h2 class="section-title reveal">Why VANGELUX exists</h2>
+
+      <p class="story-lead reveal">
+        What if the clothes we wear could do more than make a fashion statement? What if they could carry a message,
+        start conversations about Jesus, and remind us daily of whom we represent?
+      </p>
+      <p class="story-text reveal">
+        Speaking openly about faith can sometimes be difficult. VANGELUX creates another way to share it, through
+        thoughtful, Gospel-centred design. Because the message isn’t only for the person looking at your shirt.
+        It’s also for the person wearing it.
+      </p>
+
+      <div class="pillars">
+        <article class="pillar reveal">
+          <p class="pillar-kicker">A message to the world</p>
+          <p>Share biblical truth through meaningful design, spark respectful conversations about Jesus, and offer hope to someone who needs it.</p>
+        </article>
+        <article class="pillar reveal">
+          <p class="pillar-kicker">A reminder to yourself</p>
+          <p>Be mindful of your words and choices, treat people with love and grace, and stand firm in faith, even when no one is watching.</p>
+        </article>
+      </div>
+
+      <div class="name-meaning reveal">
+        <p class="name-word">EVANGEL <span>+</span> LUX</p>
+        <p>
+          <strong>VANGELUX</strong> joins the Gospel (<em>evangel</em>) and light (<em>lux</em>): carrying the light of
+          Christ into everyday life.
+        </p>
+      </div>
+
+      <figure class="inspiration reveal">
+        <blockquote>“I tell you that, if these should hold their peace, the stones would immediately cry out.”</blockquote>
+        <figcaption>Luke 19:40 (KJV) · Our inspiration</figcaption>
+      </figure>
+    </section>
+
+    <!-- ===================== PHOTO GALLERY =====================
+         Hidden until you add photos. To add photos, upload them to the
+         assets/gallery folder on GitHub named 1.jpg, 2.jpg, 3.jpg ...
+         (see README, Part 4). No code editing needed. -->
+    <section class="section gallery-section" id="gallery" hidden>
+      <h2 class="section-title reveal">Gallery</h2>
+      <div class="gallery" id="galleryGrid"></div>
+    </section>
+
     <!-- ===================== D. BRAND PORTFOLIO ===================== -->
     <section class="section portfolio" id="portfolio">
       <div class="portfolio-card reveal">
-        <p class="eyebrow">Brand portfolio</p>
+        <p class="eyebrow">Brand portfolio 2026</p>
         <h2 class="portfolio-title">Discover our brand</h2>
         <p class="portfolio-text">Explore the vision, story, identity and mission behind VANGELUX.</p>
         <!-- To change the portfolio: replace assets/portfolio.pdf with your own PDF (same name). -->
         <a class="gold-btn" id="portfolioBtn" href="assets/portfolio.pdf" target="_blank" rel="noopener">
           View our brand portfolio
         </a>
+        <p class="portfolio-note">PDF · opens in a new tab</p>
       </div>
     </section>
 
     <!-- ===================== E. OUR MISSION ===================== -->
     <section class="section" id="mission">
       <h2 class="section-title reveal">Our mission</h2>
+
+      <p class="mission-statement reveal">
+        To create purpose-driven Christian clothing that communicates the Gospel, inspires boldness in faith,
+        and reminds believers to live out the message they wear.
+      </p>
 
       <div class="mission-grid">
         <article class="mission-card reveal">
@@ -150,6 +206,37 @@
           <h3>Glorify the King</h3>
           <p>Honour Jesus Christ through everything we do.</p>
         </article>
+      </div>
+
+      <p class="promise reveal">
+        <span class="promise-label">Our promise</span>
+        Every VANGELUX piece should carry a message worth sharing and a reminder worth living by.
+      </p>
+    </section>
+
+    <!-- ===================== VALUES ===================== -->
+    <section class="section" id="values">
+      <h2 class="section-title reveal">What we stand for</h2>
+      <ul class="values">
+        <li class="reveal"><strong>Christ-centred</strong><span>Jesus at the centre of everything we create.</span></li>
+        <li class="reveal"><strong>Biblically grounded</strong><span>Every message rooted in Scripture.</span></li>
+        <li class="reveal"><strong>Bold, without compromise</strong><span>Unashamed of the Gospel.</span></li>
+        <li class="reveal"><strong>Authentic</strong><span>Practising what we profess.</span></li>
+        <li class="reveal"><strong>Excellence</strong><span>Quality, thoughtful design and meaningful creativity.</span></li>
+        <li class="reveal"><strong>Purpose beyond profit</strong><span>Serving people and communities.</span></li>
+      </ul>
+    </section>
+
+    <!-- ===================== PURPOSE BEYOND PROFIT ===================== -->
+    <section class="section" id="giving">
+      <div class="giving reveal">
+        <span class="giving-icon" aria-hidden="true">✝</span>
+        <h2>Purpose beyond profit</h2>
+        <p>
+          As VANGELUX grows, we plan to set aside a portion of our profits to support people and families in need,
+          and to help restore churches and community spaces.
+        </p>
+        <p class="giving-line">A Gospel message shared. A believer encouraged. A neighbour supported.</p>
       </div>
     </section>
 
@@ -170,8 +257,15 @@
   <footer class="footer">
     <p class="footer-brand">VANGELUX</p>
     <p class="footer-tagline">Win hearts. Light nations. Glorify the King.</p>
+    <p class="footer-sub">We don’t wear our faith only on Sundays. We carry it wherever we go.</p>
     <p class="footer-copy">© <span id="year">2026</span> VANGELUX. All Rights Reserved.</p>
   </footer>
+
+  <!-- Full-screen photo viewer (used by the gallery) -->
+  <div class="lightbox" id="lightbox" hidden>
+    <button class="lightbox-close" type="button" aria-label="Close">×</button>
+    <img alt="" id="lightboxImg">
+  </div>
 
   <script src="script.js"></script>
 </body>

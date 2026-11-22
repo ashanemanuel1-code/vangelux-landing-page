@@ -88,6 +88,76 @@ const CONTACT = {
   });
 })();
 
+// ---------- Photo gallery (no code editing needed) ----------
+// Upload photos to the assets/gallery folder named 1.jpg, 2.jpg, 3.jpg ...
+// The page finds them automatically, in number order, and stops at the
+// first missing number. If there are no photos, the gallery stays hidden.
+const GALLERY_FOLDER = "assets/gallery/";
+const GALLERY_MAX = 30;
+const GALLERY_TYPES = ["jpg", "jpeg", "png", "webp", "JPG", "JPEG", "PNG"];
+
+function findPhoto(number) {
+  return new Promise((resolve) => {
+    let i = 0;
+    const tryNext = () => {
+      if (i >= GALLERY_TYPES.length) return resolve(null);
+      const src = `${GALLERY_FOLDER}${number}.${GALLERY_TYPES[i++]}`;
+      const img = new Image();
+      img.onload = () => resolve(src);
+      img.onerror = tryNext;
+      img.src = src;
+    };
+    tryNext();
+  });
+}
+
+(async function setupGallery() {
+  const section = document.getElementById("gallery");
+  const grid = document.getElementById("galleryGrid");
+  if (!section || !grid) return;
+
+  const photos = [];
+  for (let n = 1; n <= GALLERY_MAX; n++) {
+    const src = await findPhoto(n);
+    if (!src) break;
+    photos.push(src);
+  }
+  if (photos.length === 0) return;
+
+  photos.forEach((src, i) => {
+    const btn = document.createElement("button");
+    btn.type = "button";
+    btn.setAttribute("aria-label", `Open photo ${i + 1}`);
+    const img = document.createElement("img");
+    img.src = src;
+    img.alt = `VANGELUX photo ${i + 1}`;
+    img.loading = "lazy";
+    btn.appendChild(img);
+    btn.addEventListener("click", () => openLightbox(src, img.alt));
+    grid.appendChild(btn);
+  });
+  section.hidden = false;
+  section.querySelectorAll(".reveal").forEach((el) => el.classList.add("is-visible"));
+})();
+
+// ---------- Full-screen photo viewer ----------
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightboxImg");
+function openLightbox(src, alt) {
+  lightboxImg.src = src;
+  lightboxImg.alt = alt;
+  lightbox.hidden = false;
+  document.body.style.overflow = "hidden";
+}
+function closeLightbox() {
+  lightbox.hidden = true;
+  document.body.style.overflow = "";
+}
+if (lightbox) {
+  lightbox.addEventListener("click", closeLightbox);
+  document.addEventListener("keydown", (e) => { if (e.key === "Escape") closeLightbox(); });
+}
+
 // ---------- Small pop-up message ----------
 function showToast(message) {
   const toast = document.createElement("div");

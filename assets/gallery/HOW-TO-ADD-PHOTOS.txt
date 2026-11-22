@@ -1,0 +1,12 @@
+VANGELUX GALLERY — HOW TO ADD PHOTOS
+
+1. Name your photos with numbers: 1.jpg, 2.jpg, 3.jpg ... (.png or .webp also work)
+2. On GitHub, open this folder (assets > gallery)
+3. Click "Add file" > "Upload files", drag the photos in, click "Commit changes"
+4. Wait about 1 minute and refresh the website.
+
+- No gaps in the numbers (1, 2, 3 ... not 1, 2, 4)
+- Rename files to change the order
+- The gallery stays hidden while this folder has no photos
+
+Keep this file here so the folder stays visible on GitHub.
