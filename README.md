@@ -85,7 +85,9 @@ The page has a **Gallery** section that stays **hidden until you add photos**, s
 - Up to 30 photos. Square or portrait photos look best.
 - Resize photos to about **1200–1600 px wide** before uploading (WhatsApp-compressed photos are fine), so the page stays fast.
 
-> The `gallery` folder contains a small file named `HOW-TO-ADD-PHOTOS.txt`. Leave it there: it keeps the folder visible on GitHub (GitHub hides empty folders).
+> **Folder note:** GitHub does not show empty folders, so the `gallery` folder will not appear until you add the first photo.
+> To add the first photo: open the `assets` folder → **Add file → Create new file** → type `gallery/1.jpg`? No — use this instead:
+> **Add file → Upload files** inside `assets`, then drag a whole folder named `gallery` (with your photos inside) from your computer.
 
 ---
 
