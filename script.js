@@ -11,7 +11,7 @@ document.documentElement.classList.add("js");
 const CONTACT = {
   name: "VANGELUX",
   phone: "+94776271143",
-  email: "ashanemanuel1@gmail.com",
+  email: "vangeluxclothing@gmail.com",
   instagram: "https://www.instagram.com/vangelux.co/",
   note: "WIN HEARTS. LIGHT NATIONS. GLORIFY THE KING."
 };
